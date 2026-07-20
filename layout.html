@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        header {
+            background-color: red;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+        article {
+            /* background-color: yellow; */
+            float: left;
+            padding: 20px;
+            width: 70%;
+            height: 300px;
+        }
+        
+        nav {
+            background-color: orange;
+            float: left;
+            width: 30%;
+            height: 300px;
+            padding: 20px;
+        }
+        nav ul {
+             list-style-type: disc;
+             padding: 0;
+            }
+            section::after {
+            content: "";
+            display: table;
+             clear: both;
+            }
+        a {
+            text-decoration: none;
+            color: red;
+        }
+        footer {
+            background-color: greenyellow;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: 300px;
+            }
+        }
+        img {
+            float: left;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+         HEADER 
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="https://www.kmutnb.ac.th"> KMUTNB </a></li>
+                <li><a href="https://www.fitm.kmutnb.ac.th/"> FITM </a></li>
+                <li><a href="https://www.facebook.com/matee.tls"> FACEBOOK </a></li>
+            </ul>
+        </nav>
+        <article>
+            <img src="image/me.jpg" alt="67" height="200px">
+            <p align="center">นายเมธี ทองเหลืองสุข</p>
+            <p align="center">6906022511055</p>
+        </article>
+        <table border="1">
+            <tr>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+        </table>
+        <br>
+        <!-- table>tr*10>td*5  -->
+
+    </section>
+   <footer>
+    <a href="index.html">Go index</a>
+   </footer>
+</body>
+</html>
