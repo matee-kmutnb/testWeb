@@ -1,0 +1,21 @@
+body{
+    background-color: cyan;
+}
+
+.red{
+    color: red;
+}
+.blue{
+    color: blue;
+}
+.font1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.size1{
+    font-size: 80px;
+    font-weight: bold;
+}
+/* ID SELECTOR */
+#green{
+    color: green;
+}

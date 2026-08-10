@@ -106,7 +106,22 @@
                 <br>
                 <label >ส่วนสูง (ซม.):</label>
                 <input type="number" min="100" max="200">
-                <br>
+                <br><br>
+                <label for="">drop down list : วิชาที่ชอบ</label><br>
+                <optgroup label="วิชาบังคับ">
+                <select name="subject" id="subject">
+                    <option value="COMPRO">Compro</option>
+                    <option value="INTRO">Intro to INE</option>
+                    <option value="DATA">Datacom</option>
+                </optgroup>
+                
+                <optgroup label="วิชาเลือก">
+                <select name="subject" id="subject">
+                    <option value="ENG">ENG</option>
+                    <option value="PSYCHO">PSYCHOLOGY</option>
+                    <option value="SPORT">SPORT</option>
+                </optgroup>
+                </select>
             
             <br><br>
             <!-- Radio   -->
@@ -137,12 +152,10 @@
                     <br>
                     <label for="gsearch">Search Google:</label>
             <input type="search" id="gsearch" name="gsearch">
-            <br>
+            <br><br>
             <button type="button" class="btn btn-success">Success</button>
             <button type="button" class="btn btn-warning">Warning</button>
             <button type="button" class="btn btn-danger">Danger</button>
-
-
                     <br><br>
             <input type="button" class="btn btn-success" value="Submit"> 
             <input type="reset" class="btn btn-danger" value="Reset">
